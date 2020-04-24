@@ -16,35 +16,9 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class TC002_POST_Request_DummyRestAPI {
-	
-	public Map<String, String> map= new HashMap<String, String>();
-	
-	@BeforeClass
-	public void postdata() {
-		map.put("name", RestUtils.getName());
-		map.put("salary", "7000");
-		map.put("age", "45");
-		
-		
-		
-		RestAssured.baseURI="http://dummy.restapiexample.com/api/v1";
-		RestAssured.basePath="/create";
-	}
+public class TC_003_GET_Request_DummyRestAPI {
 	
 	@Test(priority=1)
-	public void testpost() {
-		given()
-		   .contentType("application/json")
-		   .body(map)
-		.when()
-		  .post()
-		.then()
-		   .statusCode(200);
-		//.log().all();
-	}
-	
-	@Test(priority=2)
 	public void testGet(){
 	String url="http://dummy.restapiexample.com/api/v1/employees";
 	

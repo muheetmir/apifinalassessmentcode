@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.restassured.TC001_GET_Request_JsonPlaceHolder">
+      <class name="com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI">
         <methods>
-          <include name="getallUsersWithCondition"/>
+          <include name="postdata"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- com.practice.restassured.TC001_GET_Request_JsonPlaceHolder -->
+      </class> <!-- com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
