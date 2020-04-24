@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 
 public class TC_003_GET_Request_DummyRestAPI {
 	
-	@Test(priority=1)
+	@Test
 	public void testGet(){
 	String url="http://dummy.restapiexample.com/api/v1/employees";
 	

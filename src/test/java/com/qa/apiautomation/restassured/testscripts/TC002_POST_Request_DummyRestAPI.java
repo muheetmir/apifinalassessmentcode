@@ -32,7 +32,7 @@ public class TC002_POST_Request_DummyRestAPI {
 		RestAssured.basePath="/create";
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void testpost() {
 		given()
 		   .contentType("application/json")
@@ -40,32 +40,11 @@ public class TC002_POST_Request_DummyRestAPI {
 		.when()
 		  .post()
 		.then()
-		   .statusCode(200);
-		//.log().all();
+		   .statusCode(200)
+		.log().all();
 	}
 	
-	@Test(priority=2)
-	public void testGet(){
-	String url="http://dummy.restapiexample.com/api/v1/employees";
 	
-	Response response=null;
-	
-	 response = 
-		given()
-		.when()
-	   .get(url)
-	   .then()
-	    .statusCode(200)
-	    .statusLine("HTTP/1.1 200 OK")
-	    .header("Content-Type", "application/json;charset=utf-8")
-	    .log().all()
-	    .extract().response();
-	List<String> list=response.jsonPath().getList("data");
-	 
-	System.out.println(list);
-	 
-	
-	}
 	
 
 }
