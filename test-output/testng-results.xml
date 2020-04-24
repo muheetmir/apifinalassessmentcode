@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4429" started-at="2020-04-24T06:55:21Z" finished-at="2020-04-24T06:55:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4429" started-at="2020-04-24T06:55:21Z" finished-at="2020-04-24T06:55:26Z">
+      <class name="com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI">
+        <test-method status="PASS" signature="postdata()[pri:0, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="postdata" is-config="true" duration-ms="492" started-at="2020-04-24T06:55:21Z" finished-at="2020-04-24T06:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postdata -->
+        <test-method status="PASS" signature="testpost()[pri:1, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="testpost" duration-ms="3351" started-at="2020-04-24T06:55:22Z" finished-at="2020-04-24T06:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpost -->
+        <test-method status="PASS" signature="testGet()[pri:2, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="testGet" duration-ms="549" started-at="2020-04-24T06:55:25Z" finished-at="2020-04-24T06:55:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGet -->
+      </class> <!-- com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
