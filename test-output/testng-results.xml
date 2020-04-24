@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4724" started-at="2020-04-24T10:09:04Z" finished-at="2020-04-24T10:09:09Z">
+  <suite name="Default suite" duration-ms="2668" started-at="2020-04-24T11:23:43Z" finished-at="2020-04-24T11:23:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4724" started-at="2020-04-24T10:09:04Z" finished-at="2020-04-24T10:09:09Z">
-      <class name="com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI">
-        <test-method status="PASS" signature="postdata()[pri:0, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="postdata" is-config="true" duration-ms="550" started-at="2020-04-24T10:09:04Z" finished-at="2020-04-24T10:09:05Z">
+    <test name="Default test" duration-ms="2668" started-at="2020-04-24T11:23:43Z" finished-at="2020-04-24T11:23:45Z">
+      <class name="com.qa.apiautomation.restassured.testscripts.TC_003_GET_Request_DummyRestAPI">
+        <test-method status="PASS" signature="getEmployeeIdsWithSalaries()[pri:0, instance:com.qa.apiautomation.restassured.testscripts.TC_003_GET_Request_DummyRestAPI@77caeb3e]" name="getEmployeeIdsWithSalaries" duration-ms="2632" started-at="2020-04-24T11:23:43Z" finished-at="2020-04-24T11:23:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postdata -->
-        <test-method status="PASS" signature="testpost()[pri:1, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="testpost" duration-ms="3328" started-at="2020-04-24T10:09:05Z" finished-at="2020-04-24T10:09:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testpost -->
-        <test-method status="PASS" signature="testGet()[pri:2, instance:com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI@6a4f787b]" name="testGet" duration-ms="811" started-at="2020-04-24T10:09:08Z" finished-at="2020-04-24T10:09:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGet -->
-      </class> <!-- com.qa.apiautomation.restassured.testscripts.TC002_POST_Request_DummyRestAPI -->
+        </test-method> <!-- getEmployeeIdsWithSalaries -->
+      </class> <!-- com.qa.apiautomation.restassured.testscripts.TC_003_GET_Request_DummyRestAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

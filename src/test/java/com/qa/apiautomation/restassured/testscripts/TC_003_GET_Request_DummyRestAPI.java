@@ -1,25 +1,20 @@
 package com.qa.apiautomation.restassured.testscripts;
 
 import static io.restassured.RestAssured.given;
-
-
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.qa.apiautomation.restassured.utilities.RestUtils;
-
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+
+
+// Get request to get all ids with its respective salaries and showing it on console
 public class TC_003_GET_Request_DummyRestAPI {
 	
+	
 	@Test
-	public void testGet(){
+	public void getEmployeeIdsWithSalaries(){
 	String url="http://dummy.restapiexample.com/api/v1/employees";
 	
 	Response response=null;
@@ -34,10 +29,18 @@ public class TC_003_GET_Request_DummyRestAPI {
 	    .header("Content-Type", "application/json;charset=utf-8")
 	    .log().all()
 	    .extract().response();
-	List<String> list=response.jsonPath().getList("data");
 	 
-	System.out.println(list);
-	 
+	List<String> idList=response.jsonPath().getList("data.id");
+	List<String> salaryList=response.jsonPath().getList("data.employee_salary");
+	
+	Map<String , String> map = new LinkedHashMap<String , String>();
+	
+	for(int i=0;i<idList.size();i++)
+	{
+		map.put(idList.get(i), salaryList.get(i));
+	}
+	
+	System.out.println(map);
 	
 	}
 	

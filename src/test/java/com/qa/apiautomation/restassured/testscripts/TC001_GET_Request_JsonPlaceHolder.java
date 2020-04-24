@@ -27,7 +27,6 @@ public class TC001_GET_Request_JsonPlaceHolder {
 		    .statusCode(200)
 		    .statusLine("HTTP/1.1 200 OK")
 		    .header("Content-Type", "application/json; charset=utf-8")
-		    //.log().all()
 		    .extract().response();
 		 int size=response.jsonPath().getList("id").size();
 		 System.out.println("count of all users = "+size); 
@@ -73,7 +72,6 @@ public class TC001_GET_Request_JsonPlaceHolder {
 		    .statusCode(200)
 		    .statusLine("HTTP/1.1 200 OK")
 		    .header("Content-Type", "application/json; charset=utf-8")
-		  // .log().all()
 		    .extract().response();
 		 String userid=response.jsonPath().getString("id");
 		 System.out.println("Userid's of users where userId is 2 = "+userid);
